@@ -1,5 +1,4 @@
-﻿//https://msnryng.github.io/taperMonkey/util.user.js
-console.log("util.user.js")
+//https://msnryng.github.io/taperMonkey/util.user.js
 function openErSite(word) {
 	const erUrls = []
 	erUrls.push("https://supjav.com/?s=" + word)
@@ -15,7 +14,6 @@ function openErSite(word) {
 	erUrls.push("http://xjavporn.com/?s=" + word)
 	erUrls.push("https://www.google.com/search?num=100&q=" + word + "+site%3Ajp.spankbang.com")
 	for (const key in erUrls) {
-		var url = erUrls[key];
-		window.open(url, "_blank")
+		window.open(erUrls[key], "_blank")
 	}
 }
