@@ -1,4 +1,5 @@
 ﻿//https://msnryng.github.io/taperMonkey/util.user.js
+console.log("util.user.js")
 function openErSite(word) {
 	const erUrls = []
 	erUrls.push("https://supjav.com/?s=" + word)
