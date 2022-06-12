@@ -14,7 +14,7 @@ function openErSite(word) {
 	erUrls.push("http://xjavporn.com/?s=" + word)
 	erUrls.push("https://www.google.com/search?num=100&q=" + word + "+site%3Ajp.spankbang.com")
 	for (const key in erUrls) {
-		let url = erUrls[key];
+		var url = erUrls[key];
 		window.open(url, "_blank")
 	}
 }
