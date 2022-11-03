@@ -510,9 +510,12 @@ function initTaperScript(loginMail,loginPass) {
 						ck = true;
 					}
 					var id = "calcBox" + index;
+					var rankTagId = "calcBoxRank" + index;
 					var preId = document.querySelector("#" + id);
+					var preIdRank = document.querySelector("#" + rankTagId);
 					if (preId) {
 						preId.parentNode.removeChild(preId);
+						preIdRank.parentNode.removeChild(preIdRank);
 					}
 					var result = o.result;
 					var aboutCoin = o.aboutCoin;
@@ -527,6 +530,7 @@ function initTaperScript(loginMail,loginPass) {
 					var topIs = clientRect.top + window.scrollY;
 					var totalMachine = data.length;
 					tag.id = id;
+					rankTag.id = rankTagId;
 					tag.setAttribute(
 						"style",
 						"line-height:15px;position: absolute;top: " +
