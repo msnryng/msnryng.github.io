@@ -1,4 +1,4 @@
-﻿function getClass() {
+﻿window.getClass=function(){
   class GitTest {
     constructor(tex) {
       console.log("hihi");
