@@ -3,3 +3,4 @@
 		console.log(tex)
 	}
 }
+window.GitTest = GitTest;

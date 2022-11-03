@@ -11,6 +11,11 @@
 
 (function () {
   "use strict";
-
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "https://msnryng.github.io/taperMonkey/hellotest.js";
+  var firstScript = document.getElementsByTagName("script")[0];
+  firstScript.parentNode.insertBefore(script, firstScript);
+//   var test = new GitTest("hello dude");
   // Your code here...
 })();
