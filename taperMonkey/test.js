@@ -10,14 +10,22 @@
 // ==/UserScript==
 
 (function () {
-	"use strict";
-	var script = document.createElement("script")
-	script.type = "text/javascript";
-	script.src =
-    "https://msnryng.github.io/taperMonkey/hellotest.js";
-	var firstScript = document.getElementsByTagName("script")[0];
-	firstScript.parentNode.insertBefore(script, firstScript);
-	while(getClass())
-	var classIs=getClass()
-	var test = new classIs("sssss");
+  "use strict";
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src =
+    "https://msnryng.github.io/taperMonkey/hellotest.js?query=" +
+    new Date().getTime();
+  var firstScript = document.getElementsByTagName("script")[0];
+  firstScript.parentNode.insertBefore(script, firstScript);
+	var setIntervalID=setInterval(() => {
+		if (window.classLoaded) {
+			clearInterval(setIntervalID);
+			var t = window.getClass()
+			var test=new t("fuck!!!!")
+		} else {
+			console.log("wait");
+		}
+	}, 10);
+
 })();
