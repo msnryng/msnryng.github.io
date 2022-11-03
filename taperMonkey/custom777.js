@@ -323,11 +323,11 @@ function initTaperScript(loginMail,loginPass) {
 				var samai =
 					daySum[i] == undefined
 						? "--"
-						: "差枚<br style='display: block;content:'';margin: 10px 0;'>" +
+						: "差枚" +
 						  kanma(daySum[i]);
 				div.innerHTML =
 					o.tex +
-					"<br style='display: block;content:'';margin: 10px 0;'>" +
+					"\n" +
 					samai;
 				div.setAttribute(
 					"style",
@@ -335,7 +335,7 @@ function initTaperScript(loginMail,loginPass) {
 						o.color +
 						"!important;border: none;color:" +
 						o.fontColor +
-						"!important;text-align: center!important;text-decoration: none!important;display: inline-block!important;font-size: 10px!important;margin: 0px 0px!important;padding: 0px 0px!important;"
+						"!important;text-align: center!important;text-decoration: none!important;display: inline-block!important;font-size: 10px!important;margin: 0px 0px!important;padding: 0px 0px!important;line-height:1.5!important;"
 				);
 				element.appendChild(div);
 			}
