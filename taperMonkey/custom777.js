@@ -323,7 +323,7 @@ function initTaperScript(loginMail,loginPass) {
 				var samai =
 					daySum[i] == undefined
 						? "--"
-						: "差枚" +
+						: "概算差枚\n"
 						  kanma(daySum[i]);
 				div.innerHTML =
 					o.tex +
@@ -335,7 +335,7 @@ function initTaperScript(loginMail,loginPass) {
 						o.color +
 						"!important;border: none;color:" +
 						o.fontColor +
-						"!important;text-align: center!important;text-decoration: none!important;display: inline-block!important;font-size: 10px!important;margin: 0px 0px!important;padding: 0px 0px!important;line-height:1.5!important;"
+						"!important;text-align: center!important;text-decoration: none!important;display: inline-block!important;font-size: 10px!important;margin: 0px 0px!important;padding: 0px 0px!important;line-height:1.2!important;"
 				);
 				element.appendChild(div);
 			}
@@ -637,7 +637,7 @@ function initTaperScript(loginMail,loginPass) {
 					// );
 					var td = document.createElement("td");
 					tr.appendChild(td);
-					td.textContent = kanma(aboutCoin) + "枚";
+					td.textContent = "約 "+kanma(aboutCoin) + "枚";
 					td.setAttribute(
 						"style",
 						"text-align: right;margin-left: 0;width:" +
