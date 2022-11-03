@@ -4,4 +4,4 @@
     console.log(tex);
   }
 }
-var classLoaded=true
+window.classLoaded = true;
