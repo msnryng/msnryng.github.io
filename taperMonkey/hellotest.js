@@ -1,7 +1,7 @@
 ﻿window.getClass=function(){
   class GitTest {
     constructor(tex) {
-      console.log("7777777777777777777777777777777");
+      console.log("ZETTON");
       console.log(tex);
     }
   }
