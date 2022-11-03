@@ -1,1 +1,5 @@
-﻿console.log("FUCK!!!!s");
+﻿class GitTest{
+	constructor(tex) {
+		console.log(tex)
+	}
+}
